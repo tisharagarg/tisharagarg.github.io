@@ -40,7 +40,7 @@
         }
 
         .left-column a {
-            color: #007bff;
+            color: #000;
             text-decoration: none;
         }
 
@@ -55,7 +55,7 @@
         }
 
         .right-column h2, .right-column h3 {
-            color: #007bff;
+            color: #333;
         }
 
         .right-column details {
@@ -78,6 +78,31 @@
             color: #555;
             margin-top: -10px;
         }
+
+        /* Publications section */
+        .publications {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .publications li {
+            margin-bottom: 20px;
+        }
+
+        .publications a {
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .publications a:hover {
+            text-decoration: underline;
+        }
+
+        .publications .journal {
+            font-style: italic;
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -85,7 +110,7 @@
     <div class="container">
         <!-- Left column: Bio and picture -->
         <div class="left-column">
-            <img src="profile.jpg" alt="Tishara Garg Photo">
+            <img src="profile.jpeg" alt="Tishara Garg Photo">
 
             <p><strong>Tishara Garg</strong><br>
             Ph.D. Candidate<br>
@@ -165,6 +190,20 @@
                 <summary>Abstract</summary>
                 <p> We examine the impact of trade liberalization on structural change patterns in India. Leveraging district-level variations in sectoral composition, we find that districts with greater tariff reductions experienced larger declines in manufacturing employment shares. By extending Matsuyama’s 1992 model of deindustrialization to include a non-tradable service sector, we demonstrate analytically and through simulations that India's observed deindustrialization and service-led growth can be qualitatively attributed to trade liberalization. We aim to structurally estimate the model parameters to quantify the role of trade liberalization in driving these structural changes.</p>
             </details>
+
+            <h2>Publications</h2>
+            <ul class="publications">
+                <li>
+                    <a href="https://doi.org/10.1016/j.jpubeco.2021.104349" target="_blank">Optimal Intergenerational Transfers: Public Education and Pensions</a> 
+                    (with Monisankar Bishnu, Shresth Garg, and Tridip Ray) <br>
+                    <span class="journal">Journal of Public Economics</span>, Volume 198, June 2021.
+                </li>
+                <li>
+                    <a href="https://doi.org/10.1016/j.jedc.2023.104592" target="_blank">Intergenerational Transfers: Public Education and Pensions with Endogenous Fertility</a> 
+                    (with Monisankar Bishnu, Shresth Garg, and Tridip Ray) <br>
+                    <span class="journal">Journal of Economic Dynamics & Control</span>, Volume 153, August 2023.
+                </li>
+            </ul>
         </div>
     </div>
 
