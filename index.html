@@ -75,6 +75,29 @@
 
         }
 
+                /* Abstract styling, closely aligned with the paper */
+        .right-column .abstract-inline {
+            margin-top: 0px;  /* Minimize space between the title and the abstract */
+            font-size: 16px;  /* Ensure the font size matches the paper's text */
+            cursor: pointer;
+            display: inline-block;  /* Keep it in the same flow */
+        }
+        
+        .right-column .abstract-inline summary {
+            font-size: 16px;
+            font-weight: normal;
+            color: #555;  /* Subtle color for the "Abstract" link */
+            margin-left: 10px; /* Small gap between the summary and the title */
+            display: inline;  /* Keep the summary inline with the paper */
+        }
+        
+        .right-column .abstract-inline p {
+            margin-top: 0px;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #555;
+        }
+
         .right-column p {
             font-size: 16px;
             line-height: 1.6;
@@ -163,7 +186,7 @@
             <h4>Can Industrial Policy overcome Coordination Failures? Theory and Evidence from Industrial Zones
             <span class="coauthors">(Job Market Paper)</span>
             </h4>
-            <details>
+            <details class="abstract-inline">
                 <summary>Abstract</summary>
                 <p>This paper introduces a method to study the impact of industrial policy on equilibrium selection in economies where strong complementarities can create the possibility of coordination failures. 
                    Despite the prevalence of many policies predicated on coordination failures and big-push ideas, empirical evidence on their success is limited due to the difficulty in disentangling equilibrium shifts from direct changes to fundamentals.
