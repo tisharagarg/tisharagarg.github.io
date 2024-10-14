@@ -1,244 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Tishara Garg</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-        }
+    .collapsible {
+      background-color: #FFFFFF;
+      color: #3d9ece; 
+      cursor: pointer;
+      padding: 10px;
+      margin: 0;
+      width: 30%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
 
-        /* Layout styles */
-        .container {
-            display: flex;
-        }
+    .active, .collapsible:hover {
+      background-color: #FFFFFF;
+    }
 
-        /* Left column: Image and bio */
-        .left-column {
-            width: 300px;
-            padding-right: 40px;
-            border-right: 1px solid #ddd;
-        }
-
-        .left-column img {
-            border-radius: 50%;
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            display: block;
-            margin-bottom: 20px;
-        }
-
-        .left-column p {
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
-        .left-column a {
-            color: #000;
-            text-decoration: none;
-        }
-
-        .left-column a:hover {
-            text-decoration: underline;
-        }
-
-        /* Right column: Research papers */
-        .right-column {
-            flex: 1;
-            padding-left: 40px;
-        }
-
-        .right-column h2, .right-column h3 {
-            margin-bottom: 0px;
-            margin-top: 50px;
-            font-size: 20px;
-            color: #7f8c8d;
-        }
-
-        .right-column details {
-            margin-top: -100px
-            margin-bottom: 0px;
-            padding: -20;
-        }
-
-        .right-column summary {
-            margin-top: -100px
-            font-size: 14px;
-            cursor: pointer;
-            padding-top: -20; /* Remove any padding */
-
-        }
-
-        .right-column p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        .coauthors {
-            font-size: 14px;
-            color: #33b2ff;
-            margin-top: -10px;
-        }
-
-        /* Publications section */
-        .publications {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .publications li {
-            margin-bottom: 20px;
-        }
-
-        .publications a {
-            font-weight: bold;
-            color: #000;
-            text-decoration: none;
-        }
-
-        .publications a:hover {
-            text-decoration: underline;
-        }
-
-        .publications .journal {
-            font-size: 14px;
-            font-style: italic;
-            color: #555;
-        }
-        
-        .publications .volume {
-            font-size: 14px;
-            color: #555;
-        }
-        
-        h4 {
-            display: inline-block;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        
-        .coauthors {
-            display: inline-block;
-            font-size: 14px;
-            color: #555;
-            margin-left: 5px;
-        }
-
+    .content {
+      padding: 0 10px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: white;
+    }
+    .content p {
+        margin: 5px 0;
+    }
     </style>
-</head>
-<body>
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><b>Tishara Garg<br></b></h1>
+        <img src="profile.jpeg" alt="Tishara Garg"><br>
+        <p><br>Ph.D. Candidate<br>
+        Department of Economics<br>
+        Massachusetts Institute of Technology<br>
+        tishara@mit.edu<br>
+        <a href="Garg_CV.pdf" target ="_blank">CV</a> 
+        <a href="https://www.linkedin.com/in/tishara-garg" target ="_blank">LinkedIn</a>
+        <a href="https://x.com/tisharag?lang=en" target ="_blank">Twitter</a>
+        </p>
+      </header>
+      <section>
+        <p>I am a sixth-year PhD candidate in Economics at MIT. I study questions in Trade and Macro Development using structural econometric tools from Industrial Organization.</p>
 
-    <div class="container">
-        <!-- Left column: Bio and picture -->
-        <div class="left-column">
-            <img src="profile.jpeg" alt="Tishara Garg Photo">
+        <p>Prior to my PhD, I was a research analyst on the Macro Team at D.E. Shaw. I hold an MS in Quantitative Economics from the Indian Statistical Institute and a BA in Economics from Shri Ram College of Commerce, University of Delhi.</p>
 
-            <p><strong>Tishara Garg</strong><br>
-            Ph.D. Candidate<br>
-            Department of Economics<br>
-            MIT</p>
+        <p>I am currently on the 2024-25 academic job market.</p>
+      </section>
 
-            <p>Email: tishara@mit.edu</p>
-            <p><a href="Garg_CV.pdf" target="_blank">Download CV</a></p>
-            <p><a href="https://www.linkedin.com/in/tishara-garg" target="_blank">LinkedIn</a> | <a href="https://x.com/tisharag?lang=en" target="_blank">Twitter</a></p>
+      <section>
+        <h3><b>Research Papers</b></h3> 
+
+        <b>Can Industrial Policy overcome Coordination Failures? Theory and Evidence from Industrial Zones</b><br>
+        <i>Job Market Paper</i><br>
+        <button class="collapsible">Abstract</button>
+        <div class="content">
+          <p>This paper introduces a method to study the impact of industrial policy on equilibrium selection in economies where strong complementarities can create the possibility of coordination failures. Despite the prevalence of many policies predicated on coordination failures and big-push ideas, empirical evidence on their success is limited due to the difficulty in disentangling equilibrium shifts from direct changes to fundamentals. By leveraging tools from Industrial Organization and Algebraic Geometry, I develop an approach that recovers the equilibrium selection rule without imposing strong assumptions on the distribution of economic fundamentals or their response to policy. Using a novel dataset that I constructed, I apply this method to the study of state-developed Industrial Zones in India. I find that regions with Industrial Zones are 30% more likely to switch to a high-industrialization equilibrium over a 15-year period than comparable regions without the zones. About a third of the effect of Industrial Zones on industrialization and welfare is attributable to coordination effects. The proposed method can be more broadly applied to study settings with multiple equilibria such as the structure of cities, trade liberalization episodes, and technology adoption.</p>
         </div>
 
-        <!-- Right column: Research papers with dropdown abstracts -->
-        <div class="right-column">
-            <h1>Tishara Garg</h1>
-            <p>I am a sixth-year PhD candidate in Economics at MIT. I study questions in Trade and Macro Development using structural econometric tools from Industrial Organization.</p>
-
-            <p>Prior to my PhD, I was a research analyst on the Macro Team at D.E. Shaw. I hold an MS in Quantitative Economics from the Indian Statistical Institute and a BA in Economics from Shri Ram College of Commerce, University of Delhi.</p>
-
-            <p>I am currently on the 2024-25 academic job market.</p>
-
-            <h2>Research Papers</h2>
-
-            <h4>Can Industrial Policy overcome Coordination Failures? Theory and Evidence from Industrial Zones
-            <span class="coauthors">(Job Market Paper)</span>
-            </h4>
-            <details>
-                <summary>Abstract</summary>
-                <p>This paper introduces a method to study the impact of industrial policy on equilibrium selection in economies where strong complementarities can create the possibility of coordination failures. 
-                   Despite the prevalence of many policies predicated on coordination failures and big-push ideas, empirical evidence on their success is limited due to the difficulty in disentangling equilibrium shifts from direct changes to fundamentals.
-                   By leveraging tools from Industrial Organization and Algebraic Geometry, I develop an approach that recovers the equilibrium selection rule without imposing strong assumptions on the distribution of economic fundamentals or their response to policy. 
-                   Using a novel dataset that I constructed, I apply this method to the study of state-developed Industrial Zones in India. 
-                   I find that regions with Industrial Zones are 30% more likely to switch to a high-industrialization equilibrium over a 15-year period than comparable regions without the zones.
-                   About a third of the effect of Industrial Zones on industrialization and welfare is attributable to coordination effects. 
-                   The proposed method can be more broadly applied to study settings with multiple equilibria such as the structure of cities, trade liberalization episodes, and technology adoption.</p>
-            </details>
-
-            <h4>The Effects of Immigration on the Places that Don’t Receive Immigrants
-            <span class="coauthors">(w/ <a href="https://economics.mit.edu/people/phd-students/ahmet-gulek"target="_blank">Ahmet Gulek</a>) (Ahmet's JMP)</span>
-            </h4>
-            <details>
-                <summary>Abstract</summary>
-                <p>This paper investigates how immigration-induced wage shocks can propagate beyond the regions directly affected by immigrant arrivals through production networks. Using the Syrian refugee crisis in Turkey as a quasi-experiment, we first show that low-skill immigrants lower labor costs in low-skill intensive industries in the host regions.
-                We then use the universe of Turkish employer-employee-linked records, balance sheet data, and near-universe of firm-to-firm transactions from VAT records to show that firms in non-host regions who were relatively more exposed to the inflow of immigrants through their supply chain hired more workers, increased production, and share of labor in production costs.
-                Finally, we study the general equilibrium effects of an immigration shock on real wages and welfare throughout the economy by incorporating immigration into a model of production networks.</p>
-            </details>
-
-            <h4>The Incidence of Distortions
-            <span class="coauthors">(w/ David Atkin, Baptiste Bernadac, Dave Donaldson, and Federico Huneeus)</span>
-            </h4>
-            <details>
-                <summary>Abstract</summary>
-                Economic distortions---such as market power, taxes, credit constraints, etc.---are fundamental in understanding the difference between developing and developed economies. Recent work has documented the pervasive extent of economic distortions and how they lead to substantial misallocation, or aggregate productivity loss.
-                Far less well understood is how these phenomena affect members of society differently. In this paper we combine unique datasets from Chile, linking workers and owners to firms, firms to each other, firms to consumers, and firms and consumers to the government, in order to quantify the full incidence of distortions for the first time.</p>
-            </details>
-
-            <h2>Research in Progress</h2>
-
-            <h4>Who Picks Winners? Evidence from Industrial Policy Application Cycles
-            <span class="coauthors">(w/ <a href="https://economics.mit.edu/people/phd-students/vishan-nigam"target="_blank">Vishan Nigam</a>)</span>
-            </h4>
-            <details>
-                <summary>Abstract</summary>
-                <p>In real-world settings, a firm's application for industrial policy incentives must be approved by multiple actors, including politicians, bureaucrats, and firms themselves (through self-selection). 
-                    Who ultimately picks winners, whom they favor, and how favoritism interacts with incentive design remain open questions. Using confidential data on industrial subsidy applications and decisions in a large Indian state, we document several stylized facts. 
-                    First, most variation in winning subsidies is conditional on final bureaucrat approval. While bureaucrats approve over 90% of applications, less than 30% of approved subsidies are paid, with an average delay of 3.5 years among winners. 
-                    Second, winners are actively chosen at the payment stage: each subsidy release order covers either a single high-profile plant or an industrial cluster. Firm bargaining power (proxied by size and in-state headquarters) predicts earlier payments. 
-                    Third, payments support struggling firms: in a shift-share design based on firms' pre-pandemic product mixes, those facing larger negative demand shocks in 2020 are more likely to receive payments in 2023 for investments made years earlier. Favoritism is more pronounced for subsidies on variable inputs (e.g., sales tax and electricity), which can be filed years after the eligible investment. 
-                    These results underscore the challenge of insulating industrial policy from political influence, as constrained funds controlled by politicians lead to favoritism in a black box, years after investments.</p>
-            </details>
-
-            <h4>Quantifying the Benefits of Economic Integration: Evidence from a VAT Reform in India
-            <span class="coauthors">(w/ <a href="https://www.edward-wiles.com/"target="_blank">Edward Wiles</a>)</span>
-            </h4>
-            <details>
-                <summary>Abstract</summary>
-                <p>We study the benefits of economic integration from reducing policy-induced barriers to trade. A landmark 2017 fiscal reform in India substantially reduced barriers to crossing internal state borders. Using the reform as a natural experiment and aggregate data on trade flows, we estimate gravity regressions and find that each additional border in a shipping route reduces trade by 15%. Calibrating a quantitative trade model to this elasticity, we find that reducing all such border frictions would increase GDP by 3%. To examine how supply chains may have reorganized, and the implications this has for gains from trade, we intend to exploit detailed micro-level data which we constructed from the universe of VAT records in India.  </p>
-            </details>
-
-            <h4>Trade, Deindustrialization and Service-led Growth
-            <span class="coauthors">(w/ <a href="https://www.shinnosuke-kikuchi.com/"target="_blank">Shin Kikuchi</a> and <a href="https://www.edward-wiles.com/"target="_blank">Edward Wiles</a>)</span>
-            </h4>
-            <details>
-                <summary>Abstract</summary>
-                <p> We examine the impact of trade liberalization on structural change patterns in India. Leveraging district-level variations in sectoral composition, we find that districts with greater tariff reductions experienced larger declines in manufacturing employment shares. By extending Matsuyama’s 1992 model of deindustrialization to include a non-tradable service sector, we demonstrate analytically and through simulations that India's observed deindustrialization and service-led growth can be qualitatively attributed to trade liberalization. We aim to structurally estimate the model parameters to quantify the role of trade liberalization in driving these structural changes.</p>
-            </details>
-
-            <h2>Publications</h2>
-            <ul class="publications">
-                <li>
-                    <a href="https://doi.org/10.1016/j.jpubeco.2021.104349" target="_blank">Optimal Intergenerational Transfers: Public Education and Pensions</a> 
-                    (with Monisankar Bishnu, Shresth Garg, and Tridip Ray) 
-                    <span class="journal">Journal of Public Economics</span>,  <span class="volume">Volume 198, June 2021. </span>
-                </li>
-                <li>
-                    <a href="https://doi.org/10.1016/j.jedc.2023.104592" target="_blank">Intergenerational Transfers: Public Education and Pensions with Endogenous Fertility</a> 
-                    (with Monisankar Bishnu, Shresth Garg, and Tridip Ray) 
-                    <span class="journal">Journal of Economic Dynamics & Control</span>, <span class="volume">Volume 153, August 2023. </span>
-                </li>
-            </ul>
+        <b>The Effects of Immigration on the Places that Don’t Receive Immigrants</b><br>
+        <i>with <a href="https://economics.mit.edu/people/phd-students/ahmet-gulek" target="_blank">Ahmet Gulek</a> (Ahmet's JMP)</i><br>
+        <button class="collapsible">Abstract</button>
+        <div class="content">
+          <p>This paper investigates how immigration-induced wage shocks can propagate beyond the regions directly affected by immigrant arrivals through production networks. Using the Syrian refugee crisis in Turkey as a quasi-experiment, we first show that low-skill immigrants lower labor costs in low-skill intensive industries in the host regions. We then use the universe of Turkish employer-employee-linked records, balance sheet data, and near-universe of firm-to-firm transactions from VAT records to show that firms in non-host regions who were relatively more exposed to the inflow of immigrants through their supply chain hired more workers, increased production, and share of labor in production costs. Finally, we study the general equilibrium effects of an immigration shock on real wages and welfare throughout the economy by incorporating immigration into a model of production networks. Our analytical results show that immigration can increase or decrease real wages in the control regions based on the shape of the production network. We calibrate the model using our data and reduced-form estimates. Our counterfactual estimates show that immigrants’ effects on nonhost regions are negligible in the aggregate, but can be economically meaningful for industries that are trade-dependent on the host region. </p>
         </div>
+
+        <b>The Incidence of Distortions</b><br>
+        <i>with David Atkin, Baptiste Bernadac, Dave Donaldson, and Federico Huneeus</i><br>
+        <button class="collapsible">Abstract</button>
+        <div class="content">
+          <p>Economic distortions—such as market power, taxes, credit constraints, etc.—are fundamental in understanding the difference between developing and developed economies. Recent work has documented the pervasive extent of economic distortions and how they lead to substantial misallocation, or aggregate productivity loss. Far less well understood is how these phenomena affect members of society differently. In this paper we combine unique datasets from Chile, linking workers and owners to firms, firms to each other, firms to consumers, and firms and consumers to the government, in order to quantify the full incidence of distortions for the first time.</p>
+        </div>
+      </section>
+
+      <section>
+        <h3><b>Research in Progress</b></h3> 
+
+        <b>Who Picks Winners? Evidence from Industrial Policy Application Cycles</b><br>
+        <i>with <a href="https://economics.mit.edu/people/phd-students/vishan-nigam" target="_blank">Vishan Nigam</a></i><br>
+        <button class="collapsible">Abstract</button>
+        <div class="content">
+          <p>In real-world settings, a firm's application for industrial policy incentives must be approved by multiple actors, including politicians, bureaucrats, and firms themselves (through self-selection). Who ultimately picks winners, whom they favor, and how favoritism interacts with incentive design remain open questions. Using confidential data on industrial subsidy applications and decisions in a large Indian state, we document several stylized facts. First, most variation in winning subsidies is conditional on final bureaucrat approval. While bureaucrats approve over 90% of applications, less than 30% of approved subsidies are paid, with an average delay of 3.5 years among winners. Second, winners are actively chosen at the payment stage: each subsidy release order covers either a single high-profile plant or an industrial cluster. Firm bargaining power (proxied by size and in-state headquarters) predicts earlier payments. Third, payments support struggling firms: in a shift-share design based on firms' pre-pandemic product mixes, those facing larger negative demand shocks in 2020 are more likely to receive payments in 2023 for investments made years earlier. Favoritism is more pronounced for subsidies on variable inputs (e.g., sales tax and electricity), which can be filed years after the eligible investment. These results underscore the challenge of insulating industrial policy from political influence, as constrained funds controlled by politicians lead to favoritism in a black box, years after investments.</p>
+        </div>
+
+        <b>Quantifying the Benefits of Economic Integration: Evidence from a VAT Reform in India</b><br>
+        <i>with <a href="https://www.edward-wiles.com/" target="_blank">Edward Wiles</a></i><br>
+        <button class="collapsible">Abstract</button>
+        <div class="content">
+          <p>We study the benefits of economic integration from reducing policy-induced barriers to trade. A landmark 2017 fiscal reform in India substantially reduced barriers to crossing internal state borders. Using the reform as a natural experiment and aggregate data on trade flows, we estimate gravity regressions and find that each additional border in a shipping route reduces trade by 15%. Calibrating a quantitative trade model to this elasticity, we find that reducing all such border frictions would increase GDP by 3%. To examine how supply chains may have reorganized, and the implications this has for gains from trade, we intend to exploit detailed micro-level data which we constructed from the universe of VAT records in India.</p>
+        </div>
+
+        <b>Trade, Deindustrialization and Service-led Growth</b><br>
+        <i>with <a href="https://www.shinnosuke-kikuchi.com/" target="_blank">Shin Kikuchi</a> and <a href="https://www.edward-wiles.com/" target="_blank">Edward Wiles</a></i><br>
+        <button class="collapsible">Abstract</button>
+        <div class="content">
+          <p>We examine the impact of trade liberalization on structural change patterns in India. Leveraging district-level variations in sectoral composition, we find that districts with greater tariff reductions experienced larger declines in manufacturing employment shares. By extending Matsuyama’s 1992 model of deindustrialization to include a non-tradable service sector, we demonstrate analytically and through simulations that India's observed deindustrialization and service-led growth can be qualitatively attributed to trade liberalization. We aim to structurally estimate the model parameters to quantify the role of trade liberalization in driving these structural changes.</p>
+        </div>
+      </section>
+
+      <section>
+        <h3><b>Publications</b></h3> 
+
+        <b>Optimal Intergenerational Transfers: Public Education and Pensions</b><br>
+        <i>with Monisankar Bishnu, Shresth Garg, and Tridip Ray</i><br>
+        <i>Journal of Public Economics, Volume 198, June 2021</i><br>
+        <a href="https://doi.org/10.1016/j.jpubeco.2021.104349" target="_blank">Link</a>
+      </section>
+
+      <section>
+        <b>Intergenerational Transfers: Public Education and Pensions with Endogenous Fertility</b><br>
+        <i>with Monisankar Bishnu, Shresth Garg, and Tridip Ray</i><br>
+        <i>Journal of Economic Dynamics & Control, Volume 153, August 2023</i><br>
+        <a href="https://doi.org/10.1016/j.jedc.2023.104592" target="_blank">Link</a>
+      </section>
+
+      <footer>
+        <p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
+    <script src="javascripts/scale.fix.js"></script>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
-</body>
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+  </body>
 </html>
